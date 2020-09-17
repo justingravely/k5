@@ -1,0 +1,282 @@
+* {
+  list-style: none;
+  font-family: 'Roboto';
+  color: black;
+  --Abbey: #525458;
+  --Tide: #C1B7B2;
+  --GullGray: #9CAFBE;
+  --BaliHai: #899DB0;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 68, 255);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* header */ 
+header {
+  display: flex;
+  background-color: white;
+  height: 10em;
+}
+
+header .wrap {
+  display: flex;
+  margin: auto;
+}
+
+header p {
+  margin: auto;
+  margin-left: 2em;
+}
+
+.logo {
+  background-image: url("images/logo3.png");
+  background-position: center;
+  background-size: contain;
+  height: 8em;
+  width: 8em;
+  margin: auto;
+}
+
+/* nav */
+nav {
+  background-color: white;
+  margin: auto;
+  display: flex;
+  font-size: 1em;
+  height: 2.5em;
+  overflow-x: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+nav::-webkit-scrollbar {
+  display: none;
+}
+
+.list::-webkit-scrollbar {
+  display: none;
+}
+
+.list {
+  display: flex;
+  margin: auto;
+  color: black;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  height: 2.6em;
+  width: 95%;
+  border-top: 1px solid rgba(0, 0, 0, 0.418);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.418);
+  overflow: auto;
+  white-space: nowrap;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.list-wrapper {
+  margin: auto;
+  display: flex;
+}
+
+.list a {
+  display: inline-block;
+  height: 2em;
+  text-align: center;
+  display: flex;
+  border: 1px solid transparent;
+  width: 5em;
+  margin: auto 0;
+}
+
+.list a:hover {
+  border: 1px solid black;
+}
+
+.list a span {
+  margin: auto;
+}
+
+#arrow {
+  position: absolute;
+  width: 2em;
+  left: 50%;
+  margin-left: -1em;
+  font-size: 2em;
+  margin-top: -0.51em;
+  text-align: center;
+  pointer-events: none;
+  display: none;
+  animation: arrow;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes arrow {
+  0% {
+    margin-left: -5.3em;
+  } 50% {
+    margin-left: 3.3em;
+  } 100% {
+    margin-left: -5.3em;
+  }
+}
+
+.contacts {
+  display: flex;
+  margin: auto;
+  width: 20em;
+}
+
+.contacts a {
+  height: 2em;
+  margin: auto 0 auto 0;
+  text-align: center;
+  display: flex;
+  border: 1px solid transparent;
+  width: 7em;
+}
+
+.contacts a i {
+  margin: auto;
+  margin-right: 0.3em;
+}
+
+.contacts span {
+  margin: auto;
+  margin-left: 0.1em;
+}
+
+/* hero */
+.hero {
+  height: 40em;
+  background-image: url("https://images.pexels.com/photos/934070/pexels-photo-934070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  transform: scaleX(-1);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin: auto;
+}
+
+.hero a {
+  transform: scaleX(-1);
+}
+
+.hero-content {
+  margin: auto;
+  margin-left: 10em;
+  width: 30em;
+  text-align: center;
+  transform: scaleX(-1);
+  height: 20em;
+}
+
+.hero-content h1 {
+  margin-top: 4em;
+  margin-bottom: 1.5em;
+}
+
+.hero-content a {
+  padding: 0.7em 1.6em;
+  background-color: black;
+  color: white;
+  border: 1px solid transparent;
+  font-weight: bold;
+}
+
+.hero-content a:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+/* featured */
+.featured {
+  display: flex;
+  flex-direction: column;
+}
+
+.featured h2 {
+  margin: 2em auto 2em auto;
+  color: var(--Abbey);
+}
+
+.featured #collection-component-1600266439370 {
+  width: 80%;
+  margin: auto;
+
+}
+
+/* footer */
+footer {
+  height: 10em;
+  border-top: 1px solid black;
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+}
+
+footer p {
+  margin: auto;
+  font-size: 0.9em;
+  margin-bottom: 0;
+}
+
+footer .contacts {
+  margin-bottom: 0;
+}
+
+footer #pp {
+  margin: auto;
+}
+
+#pp i{
+  margin-right: 0.3em;
+}
+
+/* mobile */
+@media (max-width: 770px) {
+  header .contacts {
+    display: none;
+  }
+  .hero {
+    background-position: center;
+  }
+}
+
+@media (max-width: 570px) {
+  .hero-content {
+    width: 18em;
+  }
+}
+
+@media (max-width: 645px) {
+  #arrow {
+    display: inline-block;
+  }
+}
+
+/* not-wide */
+@media (max-width: 1630px) {
+  .hero h1 {
+    color: white;
+    text-shadow: 2px 2px 3px black;
+  }
+}
+
+@media (max-width: 1300px) {
+  .hero-content {
+    margin-left: auto;
+}
+}
+
