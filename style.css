@@ -210,9 +210,8 @@ nav::-webkit-scrollbar {
 
 .display .tops {
   width: 32.5%;
-  background-image: url("https://cdn.discordapp.com/attachments/736393082831896590/756528592783147061/tops.png");
+  background-image: url("https://cdn.discordapp.com/attachments/736393082831896590/756536198440157335/tops.png");
   background-size: cover;
-  background-size: 100%;
   background-position: center;
   display: flex;
 }
@@ -228,7 +227,7 @@ nav::-webkit-scrollbar {
 .display .hats {
   width: 32.5%;
   background-image: url("https://cdn.discordapp.com/attachments/736393082831896590/756528583375323226/hats.png");
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   display: flex;
 }
